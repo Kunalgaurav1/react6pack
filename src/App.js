@@ -1,16 +1,31 @@
-
 import './App.css';
 
+
+
 function Mycomponent(){
-  return (
-  <h1> components</h1>
-  );
+  return <div>
+
+    kunal gaurav
+  </div>;
 }
 
 function App() {
   return (
-    <h1>hii from react app and from <Mycomponent/></h1>
+
+    <div id="adas" className="custom" >
+      hello <Mycomponent/> guys
+
+      <button >click me!</button>
+    </div>
+   
+    
+    
   );
 }
+
+
+
+
+
 
 export default App;
