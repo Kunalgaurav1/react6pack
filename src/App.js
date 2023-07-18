@@ -1,23 +1,14 @@
 import './App.css';
-import Header from './Components/Header.js';
-import {Footer, Footer2} from './Components/Footer.js';
-
-
-
-
+import Header from './Components/Header.jsx';
+import Home from './Components/Home.jsx';
 
 function App() {
   return (
     <>
-    <div id="adas" className="custom" >
-      hello kunal 
-    </div>
 
     <Header/>
 
-    <Footer/>
-
-    <Footer2/>
+    <Home/>
 
 
 

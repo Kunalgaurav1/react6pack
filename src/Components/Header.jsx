@@ -20,13 +20,26 @@
 // export default Header
 
 //rafce
+
+
+
+
+
+
+
+
+
 import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <nav>
+
+      Header 
+    </nav>
     
   )
 }
 
 export default Header;
+
