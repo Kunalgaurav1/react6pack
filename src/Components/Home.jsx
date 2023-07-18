@@ -1,13 +1,24 @@
 import React from 'react'
+import { useState } from 'react';
 
-function Home() {
+const Home=()=> {
 
-    let inputValue ;
-    let changeHandler =(e)=>{
-       inputValue = e.target.value;
-       console.log(inputValue);
+   // let inputValue =0;
 
-    }
+    const [inputValue, setInputValue] = useState(0);
+
+    const increment = ()=>{
+        setInputValue(inputValue+1);
+        
+
+    };
+   
+
+    const decrement = ()=>{
+        setInputValue(inputValue + 1);
+
+    };
+
 
     const btnStyle = {
         padding : "20px",
@@ -26,14 +37,16 @@ function Home() {
         placeholder='Enter Something' 
         style={{ padding: 50 , border: "1px solid rgba(0, 0, 0, 0.4)"}}
 
-        onChange={changeHandler}
+       value={inputValue}
+      readOnly
+
         
         />
 
 
-        <button style={btnStyle}>+</button>
+        <button style={btnStyle}  onChange={decrement} >+</button>
 
-        <button style={btnStyle}>-</button>
+        <button style={btnStyle}  onChange={increment}>-</button>
 
         
 
