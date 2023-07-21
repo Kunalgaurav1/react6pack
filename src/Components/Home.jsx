@@ -26,6 +26,8 @@ const Home=()=> {
         backgroundColor :"#f1f1f1",
         margin : "10px",
         
+
+        
     }
   return (
 
